@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <!--Synthaxe de base du code html-->
+<head>
+    <meta charset="UTF-8" />
+    <title>BINGO</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS externe -->
+</head>
+<body>
+    <header>
+        <h1>BINGO</h1>
+    </header>
+    <section class="Number">
+        <div id="NumberGen"> </div> <!-- Zone où les numéro générés serons affiché -->
+    </section>
+    <table id = "card"> <!-- Tableau représentant la carte de bingo -->
+                        <!-- Les lignes suivantes représentent les rangées de la carte de bingo. -->
+                        <!-- Chaque cellule a une classe correspondant à sa colonne. -->
+        <tr>
+            <th id="th1">B</th>
+            <th id="th2">I</th>
+            <th id="th3">N</th>
+            <th id="th4">G</th>
+            <th id="th5">O</th>
+        </tr>
+        <tr>
+            <td class="col1"></td>
+            <td class="col2"></td>
+            <td class="col3"></td>
+            <td class="col4"></td>
+            <td class="col5"></td>
+        </tr>
+        <tr>
+            <td class="col1"></td>
+            <td class="col2"></td>
+            <td class="col3"></td>
+            <td class="col4"></td>
+            <td class="col5"></td>
+        </tr>
+        <tr>
+            <td class="col1"></td>
+            <td class="col2"></td>
+            <td class="col3"></td>
+            <td class="col4"></td>
+            <td class="col5"></td>
+        </tr>
+        <tr>
+            <td class="col1"></td>
+            <td class="col2"></td>
+            <td class="col3"></td>
+            <td class="col4"></td>
+            <td class="col5"></td>
+        </tr>
+        <tr>
+            <td class="col1"></td>
+            <td class="col2"></td>
+            <td class="col3"></td>
+            <td class="col4"></td>
+            <td class="col5"></td>
+        </tr>
+      </table>
+      <section id="Bingo">
+        <p> BINGO !<br>Vous avez gagné en:</p>  <!-- Message de victoire -->
+        <p id="timer"></p>  <!-- Affichage du temps écoulé a la fin de la partie-->
+      </section>
+      <aside>
+        <p id="chrono"></p> <!-- Affichage du tchronometre pendant la partie -->
+      </aside>
+    <script src="script.js"></script>   <!-- Lien vers le fichier JavaScript externe -->
+</body>
+</html>
