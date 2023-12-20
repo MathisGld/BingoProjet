@@ -1,6 +1,6 @@
 let numbers = [],numbersOut = [], n = 0;
 
-//Génération des 99 possibilité de nombre a afficher
+//Génération des 99 possibilité de nombre a afficher ( de 1 a 99)
 for (let i = 0; i < 99; i++) {
     numbers[i] = i + 1;
 }
@@ -12,7 +12,7 @@ for (let i = numbers.length - 1; i > 0; i--) {
 }
 
 /**
- * je mélange les 99 nombres du tableaux numbers[]
+ * j'affiche les 99 nombres du tableaux numbers[] dans un paragraphe a chaque appel de fonction
  */
 function generateRandomNumber() {
 
@@ -44,7 +44,7 @@ function generateRandomNumber() {
     }
 }
 
-// Appel la fonction pour générer les nombres toute les 3,5sec
+// Appel la fonction genrateRandomNumber pour afficher les nombres toute les 3,5sec
 setInterval(generateRandomNumber, 3500);
 
 /**
@@ -63,12 +63,12 @@ function GenerateCard () {
     // trie par ordre croissant le tableaux "card"
     card.sort(function(a, b) { return a - b; });
 
-    // Remplissage du tableau HTML "card"
+    // J'obtient l'element html de la carte et de ses cellules par ID
     let table = document.getElementById('card');
     let cells = table.getElementsByTagName('td');
     
-    let rows = 5;
-    let cols = 5;
+    const rows = 5;
+    const cols = 5;
 
     //créé un element button où sera affiché le nombre de la case
     for (let i = 0; i < cols; i++) {
@@ -181,7 +181,10 @@ function win () {
 }
 
 let minute = 0, seconde = 0, resultat;
-// Fonction du timer de la partie
+
+/**
+ * Augmente le temp du timer de la partie a chaque appel
+ */
 function Timer() {
     seconde++;
     if (seconde == 60) {
