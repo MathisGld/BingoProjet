@@ -70,7 +70,7 @@ function GenerateCard () {
     const rows = 5;
     const cols = 5;
 
-    //créé un element button où sera affiché le nombre de la case
+    //créé un element button où sera affiché le nombre de la case 
     for (let i = 0; i < cols; i++) {
         for (let j = 0; j < rows; j++) {
             let button = document.createElement('button');
